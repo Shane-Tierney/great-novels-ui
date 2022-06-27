@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import ManufacturerList from './ManufacturerList'
+import NovelsList from './NovelsList'
 import Search from './Search'
 import axios from 'axios'
 
@@ -22,7 +22,7 @@ const Novels = () => {
                 <h1>Great Novels</h1>
             </div>
             <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <ManufacturerList novelsArray={novelsArray} searchTerm={searchTerm}/>
+            <NovelsList novelsArray={novelsArray} searchTerm={searchTerm}/>
         </div>
     )
 }
