@@ -6,7 +6,7 @@ const NovelsList = (props) => {
     return (
         <ul>
             {novelsArray.filter((novel) => {
-                return novel.name.toLowerCase().includes(searchTerm.toLowerCase())
+                return novel.title.toLowerCase().includes(searchTerm.toLowerCase())
             }).map((novel) => {
                 return <li>{novel.title} by {novel.author.nameFirst} {novel.author.nameLast}</li>
             })}
